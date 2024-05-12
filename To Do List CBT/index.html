@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO List App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  
+</head>
+<body>
+
+<div class="container">
+  <h2>TO-DO List</h2>
+  <div id="add-task-container">
+    <input type="text" id="task-input" placeholder="Enter task...">
+    <input type="datetime-local" id="deadline-input">
+    <button id="add-btn" onclick="addTask()">Add Task</button>
+  </div>
+  <table id="todo-table">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Status</th>
+        <th>Deadline</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <!-- Tasks will be added dynamically here   -->
+    </tbody>
+  </table>
+  <h4 style="text-align: center;">Developed By Lalit Sharma</h4>
+</div>
+
+
+
+</body>
+</html>
