@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(163,51,140,1) 13%, rgba(182,46,116,1) 21%, rgba(197,42,98,1) 27%, rgba(253,29,29,1) 50%, rgba(253,43,33,1) 55%, rgba(253,55,36,1) 59%, rgba(252,176,69,1) 100%);
+    color: #333; /* Dark text color  */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #34e7d5; /* White container background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #5611bf; /* Green heading color */
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 75%;
+    margin-bottom: 20px;
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Curved input */
+    outline: none; /* Remove outline */
+    /* background-color:rgb(80, 151, 228);*/
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #934caf; /* Green button background */
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #a04580; /* Darker green on hover */
+}
+
+
+.temp, .description, .humidity, .wind {
+    margin-bottom: 10px;
+}
+/* Add styles for the weather data display */
+/* Add styles for the weather data display */
+.weather-data {
+    margin-top: 20px;
+    text-align: center; /* Center align the text */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    position: relative; /* Position relative for image positioning */
+}
+
+/* Styling for the weather data */
+.weather-data h2 {
+    color: #111211; /* Green heading color */
+    margin-bottom: 10px;
+}
+
+.weather-data p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Cloud image styling */
+.cloud img {
+    width: 20%; /* Responsive image width */
+    max-width: 100px; /* Max width to ensure it doesn't become too large */
+    position: absolute; /* Position absolute for precise placement */
+    top: -50px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust horizontal position to center */
+    display: none; /* Initially hide the image */
+}
+.mist img{
+    
+    width: 50%; /* Responsive image width */
+    max-width: 100px; /* Max width to ensure it doesn't become too large */
+}
+
+/* Add a subtle hover effect to the weather data display */
+.weather-data:hover {
+    transform: scale(1.02); /* Scale up slightly on hover */
+    transition: transform 0.3s ease;
+}
+
+/* Add styles for the forecast row */
+.forecast-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Add styles for each forecast item */
+.forecast-item {
+    flex-basis: 30%; /* Each forecast item takes up 30% of the container width */
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    margin: 2px;
+}
+
+/* Styling for date and temperature */
+.forecast-item .date {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.forecast-item .temp {
+    font-size: 18px;
+}
+
+/* Style for the cloud image */
+.cloud {
+    margin-bottom: 10px;
+}
